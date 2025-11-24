@@ -1,0 +1,7 @@
+{
+  "name": "Manpack - AI Cold Calling",
+  "description": "Singapore's first AI cold-calling solution with a local accent. Experience the future of sales with our interactive demo.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
