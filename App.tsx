@@ -11,6 +11,7 @@ import PricingSection from './components/PricingSection';
 import FAQSection from './components/FAQSection';
 import CTASection from './components/CTASection';
 import ConnectSection from './components/ConnectSection';
+import Footer from './components/Footer';
 import LiveDemoModal from './components/LiveDemoModal';
 
 const App: React.FC = () => {
@@ -60,6 +61,9 @@ const App: React.FC = () => {
 
       {/* Page 10: Connect Section */}
       <ConnectSection />
+
+      {/* Page 11: Footer */}
+      <Footer />
 
       {isDemoOpen && <LiveDemoModal onClose={closeDemo} />}
     </div>
