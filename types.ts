@@ -6,10 +6,10 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', href: '#' },
-  { label: 'Case', href: '#' },
-  { label: 'Pricing', href: '#' },
-  { label: 'FAQ', href: '#' },
+  { label: 'Home', href: '#home' },
+  { label: 'Case', href: '#case-studies' },
+  { label: 'Pricing', href: '#pricing' },
+  { label: 'FAQ', href: '#faq' },
 ];
 
 export const CLIENT_LOGOS = [

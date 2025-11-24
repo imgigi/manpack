@@ -21,10 +21,10 @@ const App: React.FC = () => {
   const closeDemo = () => setIsDemoOpen(false);
 
   return (
-    <div className="min-h-screen bg-[#F8F9FC] font-sans">
+    <div className="min-h-screen bg-[#F8F9FC] font-sans text-base antialiased">
       
       {/* Page 1: Hero Section */}
-      <div className="relative bg-white bg-soft-gradient min-h-screen flex flex-col">
+      <div id="home" className="relative bg-white bg-soft-gradient min-h-screen flex flex-col">
         <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 w-full flex-grow flex flex-col">
           <Header />
           <main className="flex-grow flex items-center justify-center py-8 lg:py-0">
@@ -34,33 +34,49 @@ const App: React.FC = () => {
       </div>
 
       {/* Page 2: Features Section */}
-      <div className="w-full bg-[#F8F9FC]">
+      <div id="features" className="w-full bg-[#F8F9FC]">
         <FeaturesSection />
       </div>
 
       {/* Page 3: About Section */}
-      <AboutSection />
+      <div id="about">
+        <AboutSection />
+      </div>
 
       {/* Page 4: How It Works Section */}
-      <HowItWorksSection />
+      <div id="how-it-works">
+        <HowItWorksSection />
+      </div>
 
       {/* Page 5: Case Studies Section */}
-      <CaseStudiesSection />
+      <div id="case-studies">
+        <CaseStudiesSection />
+      </div>
 
       {/* Page 6: Testimonials Section */}
-      <TestimonialsSection />
+      <div id="testimonials">
+        <TestimonialsSection />
+      </div>
 
       {/* Page 7: Pricing Section */}
-      <PricingSection />
+      <div id="pricing">
+        <PricingSection />
+      </div>
 
       {/* Page 8: FAQ Section */}
-      <FAQSection />
+      <div id="faq">
+        <FAQSection />
+      </div>
 
       {/* Page 9: CTA Section */}
-      <CTASection />
+      <div id="cta">
+        <CTASection />
+      </div>
 
       {/* Page 10: Connect Section */}
-      <ConnectSection />
+      <div id="contact">
+        <ConnectSection />
+      </div>
 
       {/* Page 11: Footer */}
       <Footer />

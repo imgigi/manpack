@@ -57,9 +57,9 @@ const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
             Book a Demo
           </button>
           
-          <button className="w-full sm:w-auto px-8 py-3 bg-[#374151] hover:bg-[#1f2937] text-white rounded-lg font-medium text-lg shadow-lg transition-all hover:-translate-y-0.5">
+          <a href="#contact" className="w-full sm:w-auto px-8 py-3 bg-[#374151] hover:bg-[#1f2937] text-white rounded-lg font-medium text-lg shadow-lg transition-all hover:-translate-y-0.5 text-center cursor-pointer">
             Connect Us
-          </button>
+          </a>
         </div>
       </div>
 
