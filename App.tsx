@@ -1,6 +1,16 @@
+
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import FeaturesSection from './components/FeaturesSection';
+import AboutSection from './components/AboutSection';
+import HowItWorksSection from './components/HowItWorksSection';
+import CaseStudiesSection from './components/CaseStudiesSection';
+import TestimonialsSection from './components/TestimonialsSection';
+import PricingSection from './components/PricingSection';
+import FAQSection from './components/FAQSection';
+import CTASection from './components/CTASection';
+import ConnectSection from './components/ConnectSection';
 import LiveDemoModal from './components/LiveDemoModal';
 
 const App: React.FC = () => {
@@ -10,15 +20,46 @@ const App: React.FC = () => {
   const closeDemo = () => setIsDemoOpen(false);
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-white via-purple-50 to-purple-100">
-      <div className="absolute inset-0 z-0 bg-blur-gradient pointer-events-none" />
+    <div className="min-h-screen bg-[#F8F9FC] font-sans">
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Header />
-        <main className="pt-8 pb-16">
-          <Hero onOpenDemo={openDemo} />
-        </main>
+      {/* Page 1: Hero Section */}
+      <div className="relative bg-white bg-soft-gradient min-h-screen flex flex-col">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 w-full flex-grow flex flex-col">
+          <Header />
+          <main className="flex-grow flex items-center justify-center py-8 lg:py-0">
+            <Hero onOpenDemo={openDemo} />
+          </main>
+        </div>
       </div>
+
+      {/* Page 2: Features Section */}
+      <div className="w-full bg-[#F8F9FC]">
+        <FeaturesSection />
+      </div>
+
+      {/* Page 3: About Section */}
+      <AboutSection />
+
+      {/* Page 4: How It Works Section */}
+      <HowItWorksSection />
+
+      {/* Page 5: Case Studies Section */}
+      <CaseStudiesSection />
+
+      {/* Page 6: Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* Page 7: Pricing Section */}
+      <PricingSection />
+
+      {/* Page 8: FAQ Section */}
+      <FAQSection />
+
+      {/* Page 9: CTA Section */}
+      <CTASection />
+
+      {/* Page 10: Connect Section */}
+      <ConnectSection />
 
       {isDemoOpen && <LiveDemoModal onClose={closeDemo} />}
     </div>
